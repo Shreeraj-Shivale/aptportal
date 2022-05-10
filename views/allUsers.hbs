@@ -1,0 +1,26 @@
+<div class="container" style="text-align:center">
+  <h2 style="color:green">All registered users!</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><b>Name</b></th>
+        <th><b>Scholar Id</b></th>
+        <th><b>Score</b></th>
+        <th><b>Branch</b></th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{# each items}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.id}}</td>
+        <td>{{this.score}}</td>
+        <td>{{this.branch}}</td>
+
+      </tr>
+      {{/each}}
+      <tr>
+    </tbody>
+  </table>
+</div>
